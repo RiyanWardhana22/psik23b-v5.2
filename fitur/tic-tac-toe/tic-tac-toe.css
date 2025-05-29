@@ -1,0 +1,228 @@
+@import url(/assets/theme.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* Tic tac toe start */
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Tic Tac Toe styling */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.main-container h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cell {
+  width: 100%;
+  height: 100px;
+  background-color: #0f181b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  transition: 0.3s;
+  position: relative;
+}
+
+.cell:hover {
+  background-color: var(--main-color);
+  border: 1px solid white;
+}
+
+.cell img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#message-container {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.newGame {
+  display: none;
+  padding: 8px 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: var(--text-color);
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px var(--main-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.newGame:hover {
+  background-color: var(--text-color);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 5px 5px 0px var(--main-color);
+}
+
+.newGame:active {
+  background-color: var(--main-color);
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/* Tic tac toe end */
+
+/* FooterSecond Section Start*/
+.footerSecond {
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--main-color);
+  /* padding: 3rem 9%; */
+  /* background-image: linear-gradient(var(--bg) -20%, var(--main-color)); */
+}
+.footerSecond-text p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.footerSecond-text a:hover {
+  text-decoration: underline;
+}
+.footerSecond a {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: var(--text-color);
+}
+.footerSecond .footerSecond-iconTop a {
+  display: inline-flex;
+  padding: 0.8rem;
+  background: var(--text-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+/* FooterSecond Section End */
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: 90vh;
+  }
+
+  .footerSecond {
+    display: flex;
+  }
+
+  .footerSecond a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+
+    section {
+      min-height: 90vh;
+    }
+
+    .main-container {
+      margin-top: -5vh;
+    }
+
+    .main-container h1 {
+      font-size: 3.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  @media (max-width: 376px) {
+    html {
+      font-size: 50%;
+    }
+
+    section {
+      min-height: 80vh;
+    }
+
+    .main-container {
+      margin-top: -1vh;
+    }
+  }
+}

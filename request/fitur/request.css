@@ -1,0 +1,235 @@
+@import url(/assets/theme.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* Request Fitur Start */
+.request {
+  background: var(--bg);
+}
+
+.login-container {
+  border: 1px solid var(--main-color);
+  background-color: var(--bg);
+  border-radius: 40px;
+  box-shadow: rgb(31 31 31 / 17%) 0px -23px 25px 0px inset,
+    rgb(108 108 108 / 23%) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  background: var(--second-bg);
+  border: 1px solid var(--main-color);
+  padding: 15px 18px;
+  border-radius: 8px;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.input-group textarea {
+  height: 100px;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  box-shadow: var(--main-color) 5px 5px 5px;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0173ed;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0064cf;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.spinner {
+  display: none;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 5px;
+  margin-top: -10vh;
+}
+
+.spinner span {
+  background: var(--main-color);
+  width: 6px;
+  height: 23px;
+  animation: grow 1s ease-in-out infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.spinner span:nth-child(3) {
+  animation: grow 1s ease-in-out 0.3s infinite;
+}
+
+.spinner span:nth-child(4) {
+  animation: grow 1s ease-in-out 0.475s infinite;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+/* Request Fitur End */
+
+/* FooterSecond Section Start*/
+.footerSecond {
+  display: none;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--main-color);
+}
+
+.footerSecond-text {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footerSecond-text a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.footerSecond a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+/* FooterSecond Section End */
+
+/* BREAKPOINTS */
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: 88vh;
+  }
+
+  .footer .footer-iconTop a {
+    margin-right: 2.5vh;
+  }
+
+  .footerSecond {
+    display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .login-container {
+    margin-top: -4vh;
+  }
+
+  .footerSecond {
+    margin-bottom: 12rem;
+  }
+}
+
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+
+  .input-group input {
+    font-size: 1.4rem;
+  }
+
+  .footerSecond {
+    margin-bottom: 9rem;
+  }
+}

@@ -1,0 +1,695 @@
+@import url(../assets/theme.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+  flex-direction: column;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* Timetable Section Start */
+:root {
+  --white: #ffff;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  background: var(--bg);
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tabs__head {
+  display: flex;
+  justify-content: center;
+  background: var(--second-bg);
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  /* width: 100%; */
+  max-width: 280px;
+  /* padding: 5px 10px; */
+  padding: 7px;
+  margin: 0 auto 20px;
+}
+
+.container {
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  background: var(--second-bg);
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px var(--lightbshadow);
+}
+
+.tabs__toggle {
+  margin: 0 5px;
+  padding: 7px 25px;
+  background: var(--gradient);
+  color: var(--white);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tabs__name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--btn);
+}
+
+.tabs__title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--main-color);
+}
+
+.toggle-button {
+  width: 80vw;
+  height: 70px;
+  font-size: 2rem;
+  background: var(--gradient);
+  color: var(--white);
+  font-weight: 700;
+  border: 2px solid var(--main-color);
+  text-transform: uppercase;
+  border-radius: 15px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.toggle-button::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 70px;
+  background: linear-gradient(120deg, transparent, #ffffff, transparent);
+  transform: translateX(-100%);
+  transition: 0.8s;
+  position: absolute;
+}
+
+.toggle-button:hover {
+  box-shadow: 0 0 20px 5px var(--main-color);
+}
+
+.toggle-button:hover::before {
+  transform: translateX(100%);
+}
+
+.hidden-element {
+  height: 0;
+  width: 80vw;
+  padding: 0;
+  margin: 1rem auto;
+  overflow: hidden;
+  color: var(--text-color);
+  font-size: 15px;
+  background: var(--btn);
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  text-align: left;
+  transition: height 0.5s ease;
+}
+
+.hidden-element p {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.class-card {
+  padding: 2rem;
+  border-radius: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--lightbshadow);
+}
+
+.class-card:last-child {
+  border-bottom: none;
+}
+
+.class-card:hover {
+  background: rgba(67, 97, 238, 0.05);
+  cursor: pointer;
+}
+
+.class-name {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.class-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.class-detail i {
+  color: var(--main-color);
+}
+
+.second-matkul {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.second-matkul b {
+  color: var(--main-color);
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__toggle.is-active {
+  background: #c0d5f3;
+}
+
+.tabs__toggle.is-active .tabs__name {
+  color: #2a61d8;
+}
+
+.tabs__content.is-active {
+  display: block;
+}
+
+/* Hidden Element Max Width Start */
+#senin {
+  max-height: 180px;
+}
+
+#selasa {
+  max-height: 900px;
+}
+
+#rabu {
+  max-height: 350px;
+}
+
+#kamis {
+  max-height: 720px;
+}
+
+#jumat {
+  max-height: 360px;
+}
+/* Hidden Element Max Width End */
+
+/* Hidden Element BLOK 2 Max Width Start */
+#senin-blok2 {
+  max-height: 180px;
+}
+
+#selasa-blok2 {
+  max-height: 360px;
+}
+
+#rabu-blok2 {
+  max-height: 350px;
+}
+
+#kamis-blok2 {
+  max-height: 350px;
+}
+
+#jumat-blok2 {
+  max-height: 350px;
+}
+/* Hidden Element BLOK 2 Max Width End */
+
+.update {
+  margin-top: 3.5rem;
+  background: transparent;
+}
+
+/* Timetable Section End */
+
+/* ChangeLOG Start */
+.btn-changelog {
+  margin-left: 2rem;
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  background: linear-gradient(45deg, #71c0bb, #4e6688, #332d56);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.25em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-changelog span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-changelog::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg);
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+.btn-changelog:hover::before {
+  opacity: 0.7;
+}
+
+.btn-changelog::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: linear-gradient(45deg, #71c0bb, #4e6688, #332d56);
+  border-radius: 9px;
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(20px);
+}
+
+.btn-changelog:hover:after {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: animateModal 0.3s;
+}
+
+@keyframes animateModal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  width: 80%;
+  height: auto;
+  background-color: var(--second-bg);
+  color: var(--btn);
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+}
+
+.modal-content h2 {
+  color: #ffffff;
+  font-size: 2.8rem;
+}
+
+.box-changelog {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.modal-container {
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+}
+
+.modal-container li {
+  font-size: 1.3rem;
+}
+
+.content-changelog {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  padding: 0 5px;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ChangeLOG End */
+
+/* Kalender Akademik Section Start */
+.calender {
+  background: var(--btn);
+  /* margin-bottom: 5rem; */
+  text-align: center;
+  /* padding: 0 2rem; */
+}
+
+.calender h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--main-color);
+}
+
+.calender img {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 20px;
+  border: 2px solid var(--main-color);
+}
+
+.calender24 img {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 20px;
+  border: 2px solid var(--main-color);
+  display: flex;
+  margin-top: 5rem;
+  display: none;
+}
+
+.send-button24 {
+  display: none;
+  justify-content: center;
+  margin-top: 3rem;
+  /* margin-bottom: 1vh; */
+  align-items: center;
+  background: var(--second-bg);
+  color: var(--main-color);
+  padding: 5px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: center;
+  background: var(--second-bg);
+  color: var(--main-color);
+  padding: 5px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button24:hover,
+.send-button:hover {
+  background: var(--main-color);
+  color: var(--second-bg);
+  /* box-shadow: 0 0 20px 5px var(--main-color); */
+}
+
+.send-button24,
+.send-button i {
+  margin-right: 8px;
+}
+/* Kalender Akademik Section End */
+
+/* FooterSecond Section Start*/
+.footerSecond {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--main-color);
+}
+
+.footerSecond-text {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.footerSecond-text a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.footerSecond a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+/* FooterSecond Section End */
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hidden-element {
+    max-width: 142vh;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .btn-calender a {
+    width: 30vw;
+    margin-left: 15vw;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: 90vh;
+  }
+
+  .toggle-button {
+    margin-left: 3.5rem;
+    padding: 15px 65px;
+    font-size: 14px;
+  }
+
+  .toggle-button b {
+    font-size: 2rem;
+  }
+
+  .hidden-element {
+    margin-left: 3.5rem;
+    width: 85%;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  #senin {
+    max-height: 150px;
+  }
+
+  #selasa {
+    max-height: 740px;
+  }
+
+  #rabu {
+    max-height: 310px;
+  }
+
+  #kamis {
+    max-height: 590px;
+  }
+
+  #jumat {
+    max-height: 310px;
+  }
+
+  /* Hidden Element BLOK 2 Max Width Start */
+  #senin-blok2 {
+    max-height: 150px;
+  }
+
+  #selasa-blok2 {
+    max-height: 300px;
+  }
+
+  #rabu-blok2 {
+    max-height: 290px;
+  }
+
+  #kamis-blok2 {
+    max-height: 290px;
+  }
+
+  #jumat-blok2 {
+    max-height: 290px;
+  }
+
+  .calender img {
+    display: none;
+  }
+
+  .send-button {
+    display: none;
+  }
+
+  .calender24 img {
+    display: block;
+    justify-content: center;
+    height: 1300px;
+    width: 100%;
+  }
+
+  .send-button24 {
+    display: inline-flex;
+  }
+
+  .footerSecond {
+    display: flex;
+    margin-bottom: 12rem;
+  }
+
+  .footerSecond a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 617px) {
+  .toggle-button {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    min-height: 91vh;
+  }
+
+  .schedule h1 {
+    margin-top: -7vh;
+  }
+
+  .tabs__head {
+    margin-top: -8vh;
+  }
+
+  .calender img {
+    display: none;
+  }
+
+  .send-button {
+    display: none;
+  }
+
+  .calender24 img {
+    margin-left: 5vw;
+    display: block;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+  }
+
+  .send-button24 {
+    display: inline-flex;
+  }
+
+  .footerSecond {
+    margin-bottom: 12rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+
+  .schedule h1 {
+    font-size: 3.5rem;
+  }
+
+  .hidden-element {
+    width: 290px;
+  }
+
+  .calender h1 {
+    font-size: 3.5rem;
+  }
+
+  .calender img {
+    display: none;
+  }
+
+  .send-button {
+    display: none;
+  }
+
+  .calender24 img {
+    display: block;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+  }
+
+  .footerSecond {
+    margin-bottom: 9rem;
+  }
+
+  /* Hidden Element BLOK 2 Max Width Start */
+  #selasa-blok2 {
+    max-height: 330px;
+  }
+
+  #jumat-blok2 {
+    max-height: 335px;
+  }
+}

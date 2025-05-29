@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSIK 23 B | Fitur</title>
+    <link rel="icon" href="../assets/img/logopsik.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./fitur.css" />
+    <link rel="stylesheet" href="./helium_ai/helium_ai.css">
+
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons End -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Helium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Rubik+Mono+One&family=Zen+Dots&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header Design Start -->
+    <header class="header">
+      <a href="/">
+        <h1 class="logo">
+          <img src="../assets/img/logopsik.png" class="logo-img">
+          <span class="multiple-text"></span>
+        </h1>
+      </a>
+      <!-- Dark Mode Start-->
+      <div class="mode-gelap" onclick="toggleMode()">
+        <i onclick="myFunction()" class="bx bxs-moon" id="moon"></i>
+        <i
+          onclick="myFunction()"
+          class="bx bxs-sun"
+          id="sun"
+          style="display: none"
+        ></i>
+      </div>
+      <!-- Dark Mode End-->
+     
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="/"><i class="bx bxs-home"></i> Beranda</a>
+        <a href="../gallery/"><i class="bx bxs-image-alt"></i> Galeri</a>
+        <a href="../schedule/"><i class="bx bx-calendar" ></i></i> Jadwal</a>
+        <a href="../helium/"><i class='bx bxs-brain'></i> Helium</a>
+        <a href="#"><i class='bx bxs-layer'></i> Fitur</a>
+      </nav>
+    </header>
+    <!-- Header Design End -->
+
+    <!-- Navbar Magic Start -->
+    <nav class="navbar-magic">
+      <a href="/"
+        ><i class="bx bxs-home" aria-hidden></i>
+        <span class="title">Beranda</span></a
+      >
+      <a href="/gallery/">
+        <i class="bx bxs-image" aria-hidden></i
+        ><span class="title">Galeri</span></a
+      >
+      <a href="/schedule/"
+        ><i class="bx bx-calendar" aria-hidden></i
+        ><span class="title">Jadwal</span></a
+      >
+      <a href="../helium/"
+        ><i class="bx bxs-brain" aria-hidden></i>
+        <span class="title">Helium</span></a
+      >
+      <a href="#"
+      ><i class='bx bxs-layer' aria-hidden></i>
+      <span class="title">Fitur</span></a>
+      <!-- <div class="selected-option-bg"></div> -->
+    </nav>
+
+    <!-- Fitur Section Start -->
+    <section class="fitur" id="fitur">
+     <div class="heading-fitur">
+      <h1>FITUR LAINNYA</h1>
+      <p>Website ini juga terdapat fitur unik lainnya lohh, fitur di bawah ini dapat mempermudah mahasiswa ataupun hanya sekedar bahan gabut doang. Ingin fitur lainnya? request <a href="/request/fitur/" class="request">DISINI</a> yaa...</p>
+     </div>
+    <div class="container">
+      <div class="card">
+        <a href="./team-generator/">
+      <div class="card-icon"><i class='bx bx-user-pin'></i></div>
+        <div class="card-title">TEAM GENERATOR</div>
+          <div class="card-description">Sebagai pembentuk sebuah kelompok secara random.</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="./ai-image-generator/">
+      <div class="card-icon"><i class='bx bx-user-pin'></i></div>
+        <div class="card-title">AI IMAGE GENERATOR</div>
+          <div class="card-description">Bingung cari gambar? AI solusinya!</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="./spin-wheel/">
+      <div class="card-icon"><i class='bx bxs-color'></i></div>
+        <div class="card-title">SPIN THE WHEEL</div>
+          <div class="card-description">Spinner sederhana yang berguna untuk penentu urutan.</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="./hitung-hari/">
+      <div class="card-icon"><i class='bx bxs-calculator'></i></div>
+        <div class="card-title">HITUNG HARI</div>
+          <div class="card-description">Sebuah program simpel yang dapat menghitung total Tahun, bulan, hari.</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="./slot/">
+      <div class="card-icon"><i class='bx bxs-bowling-ball'></i></div>
+        <div class="card-title">LUCKY SLOT</div>
+          <div class="card-description">Penasaran dengan jackpot terbesarnya? Mainkan sekarang dan raih kemenanganmu!</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="./flappy-bird/">
+      <div class="card-icon"><i class='bx bxl-twitter'></i></div>
+        <div class="card-title">FLAPPY BIRD</div>
+          <div class="card-description">Berani menerima tantangan? Flappy Bird akan menguji kesabaran dan ketangkasanmu!</div>
+        </a>
+      </div>
+      <!-- <div class="card">
+        <a href="./tic-tac-toe/">
+      <div class="card-icon"><i class='bx bxs-grid'></i></div>
+        <div class="card-title">TIC TAC TOE</div>
+          <div class="card-description">Keluarkan kemampuan kamu bermain tic tac toe dengan melawan komputer!</div>
+        </a>
+      </div> -->
+    </div>
+    </section>
+    <!-- Fitur Section End -->
+
+    <!-- Card Spotify Start -->
+    <section>
+      <main class="audio">
+        <div class="wrapper">
+          <div class="top-bar">
+            <a href="./love/" target="_blank" class="heart"><i class='bx bxs-heart'></i></a>
+            <span>PSIK MUSIC</span>
+            <i class="bx bx-dots-horizontal-rounded"></i>
+          </div>
+          <div class="img-area">
+            <img src="" alt=""/>
+          </div>
+          <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+          </div>
+          <div class="progress-area">
+            <div class="progress-bar"></div>
+            <div class="timer">
+              <span class="current">0:00</span>
+              <span class="duration"></span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+          </div>
+          <div class="controls">
+            <a id="myBtn" class="btn-add"><i class="bx bxs-add-to-queue"></i
+            ></a>
+            <i id="prev" class='bx bxs-skip-previous-circle'></i>
+            <div class="play-pause">
+              <i class="bx bx-play"></i>
+            </div>
+            <i id="next" class='bx bxs-skip-next-circle'></i>
+            <i id="more-music" class="bx bxs-playlist"></i>
+          </div>
+          <div class="music-list">
+            <div class="header-list">
+              <div class="row">
+                <i class="bx bxs-playlist"></i>
+                <span>Playlist</span>
+              </div>
+              <i id="close" class="bx bx-x"></i>
+            </div>
+            <ul></ul>
+          </div>
+        </div>
+      </main>
+        <div class="footerSecond">
+          <div class="footerSecond-text">
+            <p> Created By <i class='bx bxl-sketch' id="diamond"></i>
+              <a target="_blank" href="https://www.instagram.com/riyan_wrdhna/">Riyan Wardhana</a>
+            </p>
+          </div>
+        </div>
+    </section>
+    <!-- Card Spotify End -->
+
+        <!-- Request Music Start -->
+        <main id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="box-changelog">
+              <h2>REQUEST MUSIC</h2>
+            </div>
+            <div class="modal-container">
+              <form class="login-form" 
+              action="https://formspree.io/f/mblropeb"
+              method="POST">
+                <div class="input-group">
+                  <textarea name="Judul-lagu" placeholder="Judul Lagu" required></textarea>
+                </div>
+                <div class="input-group">
+                  <textarea name="Link-youtube" placeholder="Link Youtube/Spotify (Opsional)"></textarea>
+                </div>
+                <div class="input-group">
+                  <textarea name="Putar-detik" placeholder="Di putar didetik berapa? (Opsional)"></textarea>
+                </div>
+                <button id="btn" class="btn-music" type="submit">KIRIM</button>
+              </form>
+            </div>
+          </div>
+        </main>
+        <!-- Request Music End -->
+     
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <a href="https://github.com/RiyanWardhana22" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/riyan_wrdhna/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <p>© <span id="years"></span> | Riyan Wardhana</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- scripts -->
+     <script src="./fitur.js"></script>
+     <script src="../assets/script.js"></script>
+     <script src="/fitur/music/music.js"></script>
+     <script src="/fitur/music/script.js"></script>
+     <script src="./helium_ai/helium_ai.js"></script>
+     <script type="module" src="./helium_ai/helium_customKnowledge.js"></script>
+  </body>
+</html>

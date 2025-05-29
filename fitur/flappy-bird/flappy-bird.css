@@ -1,0 +1,150 @@
+@import url(/assets/theme.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
+}
+
+body {
+  background: url("img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* Flappy Bird Start */
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5rem;
+}
+
+canvas {
+  background-color: #00bbc4;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Flappy Bird End */
+
+/* FooterSecond Section Start*/
+.footerSecond {
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--main-color);
+  /* padding: 3rem 9%; */
+  /* background-image: linear-gradient(var(--bg) -20%, var(--main-color)); */
+}
+.footerSecond-text p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.footerSecond-text a:hover {
+  text-decoration: underline;
+}
+.footerSecond a {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: var(--text-color);
+}
+.footerSecond .footerSecond-iconTop a {
+  display: inline-flex;
+  padding: 0.8rem;
+  background: var(--text-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+/* FooterSecond Section End */
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: 90vh;
+  }
+
+  canvas {
+    height: 700px;
+    width: 800px;
+  }
+
+  .footerSecond {
+    display: flex;
+  }
+
+  .footerSecond a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    min-height: 100vh;
+  }
+
+  .game-screen {
+    margin-right: 0.5rem;
+    margin-top: -5rem;
+  }
+
+  canvas {
+    height: 500px;
+  }
+}
+
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilmu Komputer | 23 B</title>
+    <link rel="icon" href="/img/logopsik.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/request/instagram/request.css" />
+
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons End -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Design Start -->
+    <header class="header">
+      <h1 class="logo">KELAS <span class="multiple-text"></span></h1>
+      <!-- Dark Mode Start-->
+      <div class="mode-gelap" onclick="toggleMode()">
+        <i onclick="myFunction()" class="bx bxs-moon" id="moon"></i>
+        <i
+          onclick="myFunction()"
+          class="bx bxs-sun"
+          id="sun"
+          style="display: none"
+        ></i>
+      </div>
+      <!-- Dark Mode End-->
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="/"><i class="bx bxs-home"></i> Beranda</a>
+        <a href="/#profil"><i class="bx bxs-user"></i> Profil</a>
+        <a href="/gallery/"><i class="bx bxs-image-alt"></i> Galeri</a>
+        <a href="/schedule/"><i class="bx bx-calendar" ></i></i> Jadwal</a>
+        <a href="/fitur/"><i class='bx bxs-layer'></i> Fitur</a>
+      </nav>
+    </header>
+    <!-- Header Design End -->
+
+    <!-- Navbar Magic Start -->
+    <nav class="navbar-magic">
+      <a href="/"
+        ><i class="bx bxs-home" aria-hidden></i>
+        <span class="title">Beranda</span></a
+      >
+      <a href="/#profile"
+        ><i class="bx bxs-user" aria-hidden></i>
+        <span class="title">Profile</span></a
+      >
+      <a href="/gallery/">
+        <i class="bx bxs-image" aria-hidden></i
+        ><span class="title">Galeri</span></a
+      >
+      <a href="/schedule/"
+        ><i class="bx bx-calendar" aria-hidden></i
+        ><span class="title">Jadwal</span></a
+      >
+      <a href="/fitur/"
+      ><i class='bx bxs-layer' aria-hidden></i>
+      <span class="title">Fitur</span></a>
+      <!-- <div class="selected-option-bg"></div> -->
+    </nav>
+    <!-- Navbar Magic End -->
+
+    <!-- Request Instagram Section Start -->
+           <section class="request">
+            <div class="login-container">
+              <form class="login-form" id="form-ig">
+                <p class="heading">REQUEST INSTAGRAM</p>
+                <div class="input-group">
+                  <input id="username" name="Username" type="text" placeholder="Username" required />
+                </div>
+                <div class="input-group">
+                  <input id="instagram" name="Link-IG" type="text" placeholder="Link IG"/>
+                </div>
+                <div class="input-group">
+                  <!-- <input name="Foto-Profil" type="file" accept="image/*" required/> -->
+                  <label for="photo">Foto Instagram:</label><br>
+                  <input id="photo" type="file" name="photo" accept="image/*" required><br><br>
+                </div>
+                <button id="btn" class="btn" type="submit">KIRIM</button>
+              </form>
+              <div class="spinner-container">
+                <div id="loading" class="spinner">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="footerSecond">
+              <div class="footerSecond-text">
+                <p> Created By <i class='bx bxl-sketch' id="diamond"></i>
+                  <a target="_blank" href="https://www.instagram.com/riyan_wrdhna/">Riyan Wardhana</a>
+                </p>
+              </div>
+            </div>
+           </section>
+    <!-- Request Instagram Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          <b>CREATED BY</b>
+        </p>
+        <a target="_blank" href="https://www.instagram.com/riyan_wrdhna/">Riyan Wardhana</a>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- scripts -->
+    <script src="/request/instagram/request.js"></script>
+    <!-- <script src="/fitur/musik/musik.js"></script> -->
+  </body>
+</html>

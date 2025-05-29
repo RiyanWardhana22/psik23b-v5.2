@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSIK 23 B | AI Image Generator</title>
+    <link rel="icon" href="/assets/img/logopsik.png" />
+    <link rel="stylesheet" href="./ai-image-generator.css" />
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons End -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="/">
+        <h1 class="logo">
+          <img src="/assets/img/logopsik.png" class="logo-img" />
+          <span class="multiple-text">PSIK 23</span>
+        </h1>
+      </a>
+      <!-- Dark Mode -->
+      <div class="mode-gelap" onclick="toggleMode()">
+        <i class="bx bxs-moon" id="moon"></i>
+        <i class="bx bxs-sun" id="sun" style="display: none"></i>
+      </div>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="/"><i class="bx bxs-home"></i> Beranda</a>
+        <a href="/gallery/"><i class="bx bxs-image-alt"></i> Galeri</a>
+        <a href="/schedule/"><i class="bx bx-calendar"></i> Jadwal</a>
+        <a href="/helium/"><i class="bx bxs-brain"></i> Helium</a>
+        <a href="/fitur/"><i class="bx bxs-layer"></i> Fitur</a>
+      </nav>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar-magic">
+      <a href="/"
+        ><i class="bx bxs-home"></i><span class="title">Beranda</span></a
+      >
+      <a href="/gallery/"
+        ><i class="bx bxs-image"></i><span class="title">Galeri</span></a
+      >
+      <a href="/schedule/"
+        ><i class="bx bx-calendar"></i><span class="title">Jadwal</span></a
+      >
+      <a href="/helium/"
+        ><i class="bx bxs-brain"></i><span class="title">Helium</span></a
+      >
+      <a href="/fitur/"
+        ><i class="bx bxs-layer"></i><span class="title">Fitur</span></a
+      >
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <header class="heading">
+        <div class="logo-wrapper">
+          <div class="logo-ai">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h1>AI Image Generator</h1>
+        </div>
+        <!-- <button class="theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button> -->
+      </header>
+
+      <div class="main-content">
+        <form action="#" class="prompt-form">
+          <div class="prompt-container">
+            <textarea
+              class="prompt-input"
+              placeholder="Gambarkan imajinasi kamu secara detail..."
+              required
+              autofocus
+            ></textarea>
+            <button type="button" class="prompt-btn">
+              <i class="fa-solid fa-dice"></i>
+            </button>
+          </div>
+
+          <div class="prompt-actions">
+            <div class="select-wrapper">
+              <select class="custom-select" id="model-select" required>
+                <option value="" selected disabled>Pilih Model</option>
+                <option value="stabilityai/stable-diffusion-xl-base-1.0">
+                  Stable Diffusion XL
+                </option>
+                <option value="SG161222/Realistic_Vision_V4.0">
+                  Realistic Vision V4
+                </option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select class="custom-select" id="count-select" required>
+                <option value="" selected disabled>Jumlah Gambar</option>
+                <option value="1">1 Gambar</option>
+                <option value="2">2 Gambar</option>
+                <option value="3">3 Gambar</option>
+                <option value="4">4 Gambar</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select class="custom-select" id="ratio-select" required>
+                <option value="" selected disabled>Aspect Ratio</option>
+                <option value="1/1">Persegi (1:1)</option>
+                <option value="2">Landscape (16:9)</option>
+                <option value="3">Portrait (9:16)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="generate-btn">
+              <i class="fa-solid fa-wand-sparkles"></i> Generate
+            </button>
+          </div>
+
+          <div class="gallery-grid"></div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <a href="https://github.com/RiyanWardhana22" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.instagram.com/riyan_wrdhna/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <p>© <span id="years"></span> | Riyan Wardhana</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./ai-image-generator.js"></script>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

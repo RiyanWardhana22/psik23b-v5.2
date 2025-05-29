@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSIK 23 B | Jadwal</title>
+    <link rel="icon" href="../assets/img/logopsik.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./schedule.css" />
+
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons End -->
+
+    <!-- AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Design Start -->
+    <header class="header">
+      <a href="/">
+        <h1 class="logo">
+          <img src="../assets/img/logopsik.png" class="logo-img" />
+          <span class="multiple-text"></span>
+        </h1>
+      </a>
+      <!-- Dark Mode Start-->
+      <div class="mode-gelap" onclick="toggleMode()">
+        <i onclick="myFunction()" class="bx bxs-moon" id="moon"></i>
+        <i
+          onclick="myFunction()"
+          class="bx bxs-sun"
+          id="sun"
+          style="display: none"
+        ></i>
+      </div>
+      <!-- Dark Mode End-->
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="/"><i class="bx bxs-home"></i> Beranda</a>
+        <a href="../gallery/"><i class="bx bxs-image-alt"></i> Galeri</a>
+        <a href="#"><i class="bx bx-calendar"></i> Jadwal</a>
+        <a href="../helium/"><i class="bx bxs-brain"></i> Helium</a>
+        <a href="../fitur/"><i class="bx bxs-layer"></i> Fitur</a>
+      </nav>
+    </header>
+    <!-- Header Design End -->
+
+    <!-- Navbar Magic Start -->
+    <nav class="navbar-magic">
+      <a href="/"
+        ><i class="bx bxs-home" aria-hidden></i>
+        <span class="title">Beranda</span></a
+      >
+      <a href="../gallery/">
+        <i class="bx bxs-image" aria-hidden></i
+        ><span class="title">Galeri</span></a
+      >
+      <a href="#"
+        ><i class="bx bx-calendar" aria-hidden></i
+        ><span class="title">Jadwal</span></a
+      >
+      <a href="../helium/"
+        ><i class="bx bxs-brain" aria-hidden></i>
+        <span class="title">Helium</span></a
+      >
+      <a href="../fitur/"
+        ><i class="bx bxs-layer" aria-hidden></i>
+        <span class="title">Fitur</span></a
+      >
+      <!-- <div class="selected-option-bg"></div> -->
+    </nav>
+    <!-- Navbar Magic End -->
+
+    <!-- Timetable Section Start -->
+    <section class="tabs">
+      <div class="tabs__head">
+        <div class="tabs__toggle is-active">
+          <span class="tabs__name">BLOK 1</span>
+        </div>
+        <div class="tabs__toggle">
+          <span class="tabs__name">BLOK 2</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="tabs__body">
+          <div class="tabs__content is-active">
+            <h2 class="tabs__title">
+              JADWAL PSIK 23 B <br />
+              MINGGU 1-8
+            </h2>
+            <button class="toggle-button"><b>SENIN</b></button>
+            <div class="hidden-element" id="senin">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Aljabar Linier Dasar</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>14:00 - 16:30 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 12.1.09</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Ichwanul Muslim Karo Karo, S.Kom., M.Kom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SELASA -->
+            <button class="toggle-button"><b>SELASA</b></button>
+            <div class="hidden-element" id="selasa">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Bahasa Indonesia</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>08:00 - 09:40 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 05.1.03 A</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Anggia Putri, M.Pd</span>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Agama Islam</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>11:20 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 192.4.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>M. Iqbal, Lc., M.Ag</span>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Agama Kristen</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>11:20 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 12.1.09</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dr. Boimin Sirait, S.Th., M.A., M.Th</span>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Agama Katolik</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>11:20 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.1.08</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dr. Yakobus Ndona, M.Hum</span>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Jaringan Komputer</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>13:30 - 16:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.1.01 (Gabung dengan kelas A)</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dedy Kiswanto, S.Kom., M.Kom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- RABU -->
+            <button class="toggle-button"><b>RABU</b></button>
+            <div class="hidden-element" id="rabu">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Pengantar Sains Komputasi</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>08:00 - 09:40 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.2.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span
+                      >Said Iskandar Al Idrus, S.Si., M.Si. / Putri Harliana,
+                      S.T., M.Kom</span
+                    >
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Aljabar Linier Dasar</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>13:00 - 15:30 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.2.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Ichwanul Muslim Karo Karo, S.Kom., M.Kom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- KAMIS -->
+            <button class="toggle-button"><b>KAMIS</b></button>
+            <div class="hidden-element" id="kamis">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Bahasa Indonesia</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>08:00 - 09:40 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 05.1.03 A</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Anggia Putri, M.Pd</span>
+                  </div>
+                </div>
+
+                <!-- Agama Islam -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Agama Islam</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>11:20 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 192.4.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>M. Iqbal, Lc., M.Ag</span>
+                  </div>
+                </div>
+
+                <!-- Agama Kristen -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Agama Kristen</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>11:20 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 12.1.09</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dr. Boimin Sirait, S.Th., M.A., M.Th</span>
+                  </div>
+                </div>
+
+                <!-- Agama Katolik -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Agama Katolik</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>11:20 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.1.08</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dr. Yakobus Ndona, M.Hum</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- JUMAT -->
+            <button class="toggle-button"><b>JUMAT</b></button>
+            <div class="hidden-element" id="jumat">
+              <div class="day-content">
+                <!-- Jaringan Komputer -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Jaringan Komputer</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>08:00 - 10:30 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 12.02.8 (Gabung dengan kelas A)</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dedy Kiswanto, S.Kom., M.Kom</span>
+                  </div>
+                </div>
+
+                <!-- Pengantar Sains Komputasi -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Pengantar Sains Komputasi</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>10:30 - 12:10 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.3.08</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>2 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span
+                      >Said Iskandar Al Idrus, S.Si., M.Si. / Putri Harliana,
+                      S.T., M.Kom</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content">
+            <h2 class="tabs__title">
+              JADWAL PSIK 23 B <br />
+              MINGGU 9-16
+            </h2>
+            <button class="toggle-button"><b>SENIN</b></button>
+            <div class="hidden-element" id="senin-blok2">
+              <div class="day-content"></div>
+            </div>
+            <!-- SELASA -->
+            <button class="toggle-button"><b>SELASA</b></button>
+            <div class="hidden-element" id="selasa-blok2">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">
+                      Data Mining dan Big Data Analytics
+                    </h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>10:30 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.1.01 (Gabung dengan Kelas A)</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span
+                      >Dr. Arnita, M.Si / Fanny Ramadhani, S.Kom., M.kom</span
+                    >
+                  </div>
+                </div>
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Pengolahan Citra Digital</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>13.50 - 16.20 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 12.2.08 (Gabung dengan Kelas A)</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-user"></i>
+                      <span>Dr. Hermawan Syahputra, M.Si</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- RABU -->
+            <button class="toggle-button"><b>RABU</b></button>
+            <div class="hidden-element" id="rabu-blok2">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Rekayasa Perangkat Lunak</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>10:30 - 13:00 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.1.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Adidtya Perdana, S.T., M. Kom</span>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Kecerdasan Buatan</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>13:50 - 16:20 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.1.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Kana Saputra S., S.Pd., M.Kom.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- KAMIS -->
+            <button class="toggle-button"><b>KAMIS</b></button>
+            <div class="hidden-element" id="kamis-blok2">
+              <div class="day-content">
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Rekayasa Perangkat Lunak</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>08:00 - 10:30 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 12.1.09</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Adidtya Perdana, S.T., M. Kom</span>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Pengolahan Citra Digital</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>13:50 - 16:20 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.3.08</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Dr. Hermawan Syahputra, M.Si</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- JUMAT -->
+            <button class="toggle-button"><b>JUMAT</b></button>
+            <div class="hidden-element" id="jumat-blok2">
+              <div class="day-content">
+                <!-- Data Mining dan Big Data Analytics -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">
+                      Data Mining dan Big Data Analytics
+                    </h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>08:00 - 10:30 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 77.2.01</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span
+                      >Dr. Arnita, M.Si / Fanny Ramadhani, S.Kom., M.kom</span
+                    >
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="class-card">
+                  <div class="class-info">
+                    <h4 class="class-name">Kecerdasan Buatan</h4>
+                    <div class="class-detail">
+                      <i class="bx bx-time"></i>
+                      <span>13:50 - 16:20 WIB</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-map"></i>
+                      <span>Ruang 192.2.02</span>
+                    </div>
+                    <div class="class-detail">
+                      <i class="bx bx-credit-card"></i>
+                      <span>3 SKS</span>
+                    </div>
+                  </div>
+                  <div class="class-detail">
+                    <i class="bx bx-user"></i>
+                    <span>Kana Saputra S., S.Pd., M.Kom.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="update">
+          <button id="myBtn" class="btn-changelog">
+            <span>CHANGELOG</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Timetable Section End -->
+
+    <!-- ChangeLog Start -->
+    <main id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="box-changelog">
+          <h2>CHANGELOG</h2>
+        </div>
+        <div class="modal-container">
+          <h3>19/04/2025</h3>
+          <li>[CHANGE] Redesign UI button schedule.</li>
+          <li>[FIX] Memperbaiki beberapa tampilan jadwal.</li>
+          <div class="content-changelog">
+            <h3>18/05/2025</h3>
+            <li>[ADD] Menambahkan playlist musik.</li>
+            <li>[CHANGE] Memindahkan jadwal Big Data dari senin ke selasa.</li>
+            <li>[FIX] Memperbaiki display hidden element.</li>
+            <li>[FIX] Redesign UI Fitur Team Generator & Hitung Hari.</li>
+          </div>
+          <!-- PEMBATAS -->
+          <h3>29/05/2025</h3>
+          <li>[ADD] Menambahkan fitur AI Image Generator.</li>
+        </div>
+      </div>
+    </main>
+    <!-- ChangeLog End -->
+
+    <!-- Kalender Section Start -->
+    <section class="calender">
+      <div class="container">
+        <h1 id="judul-calender">KALENDER AKADEMIK</h1>
+        <img
+          id="img"
+          src="../assets/img/KALENDER AKADEMIK 2024-2025 169.png"
+          alt=""
+          loading="lazy"
+        />
+        <a
+          class="send-button"
+          target="_blank"
+          href="../assets/img/dokumen/KALENDER AKADEMIK UNIMED 2024-2025.pdf"
+          download="KALENDER AKADEMIK UNIMED 2024-2025"
+        >
+          <i class="bx bxs-file-pdf"></i>
+          PDF
+        </a>
+        <div class="calender24">
+          <img
+            id="img"
+            src="../assets/img/KALENDER AKADEMIK 2024-2025.png"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <a
+          class="send-button24"
+          target="_blank"
+          href="../assets/img/dokumen/KALENDER AKADEMIK UNIMED 2024-2025.pdf"
+          download="KALENDER AKADEMIK UNIMED 2024-2025"
+        >
+          <i class="bx bxs-file-pdf"></i>
+          PDF
+        </a>
+      </div>
+      <div class="footerSecond">
+        <div class="footerSecond-text">
+          <p>
+            Created By <i class="bx bxl-sketch" id="diamond"></i>
+            <a target="_blank" href="https://www.instagram.com/riyan_wrdhna/"
+              >Riyan Wardhana</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Kalender Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <a href="https://github.com/RiyanWardhana22" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.instagram.com/riyan_wrdhna/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <p>© <span id="years"></span> | Riyan Wardhana</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- scripts -->
+    <script src="./schedule.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,317 @@
+@import url(/assets/theme.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* Hitung Umur Start */
+.day-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.calculator-card {
+  width: 100%;
+  max-width: 600px;
+  background: var(--second-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(var(--main-color-rgb), 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculator-header {
+  padding: 2.5rem;
+  background: rgba(var(--main-color-rgb), 0.1);
+  border-bottom: 1px solid var(--lightbshadow);
+  text-align: center;
+}
+
+.calculator-header h1 {
+  font-size: 2.8rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.calculator-header p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.calculator-body {
+  padding: 2.5rem;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-group label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper i {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.2rem 1.2rem 4.5rem;
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(var(--main-color-rgb), 0.3);
+  border-radius: 8px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 3px rgba(var(--main-color-rgb), 0.1);
+}
+
+.calculate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  background: var(--main-color);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  margin-top: 1rem;
+}
+
+.calculate-btn:hover {
+  transform: translateY(0.1em);
+}
+
+.calculate-btn i {
+  font-size: 2rem;
+}
+
+.result-display {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  background: rgba(var(--main-color-rgb), 0.05);
+  border-radius: 8px;
+  border-left: 4px solid var(--main-color);
+}
+
+.result-icon i {
+  font-size: 3.5rem;
+  color: var(--main-color);
+}
+
+.result-text {
+  flex: 1;
+}
+
+.result-text p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.calculator-info {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.calculator-info i {
+  color: var(--main-color);
+  margin-right: 0.5rem;
+}
+/* Hitung Umur End */
+
+/* FooterSecond Section Start*/
+.footerSecond {
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--main-color);
+  /* padding: 3rem 9%; */
+  /* background-image: linear-gradient(var(--bg) -20%, var(--main-color)); */
+}
+.footerSecond-text p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.footerSecond-text a:hover {
+  text-decoration: underline;
+}
+.footerSecond a {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: var(--text-color);
+}
+.footerSecond .footerSecond-iconTop a {
+  display: inline-flex;
+  padding: 0.8rem;
+  background: var(--text-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+/* FooterSecond Section End */
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0;
+    min-height: 90vh;
+  }
+
+  .day {
+    margin-top: -10vh;
+  }
+
+  .calculator-card {
+    max-width: 90%;
+  }
+
+  .calculator-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .calculator-header p {
+    font-size: 1.3rem;
+  }
+
+  .result-display {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result-icon i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .footerSecond {
+    display: flex;
+  }
+
+  .footerSecond a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 617px) {
+    .heading h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .day {
+    margin-top: -15vh;
+  }
+  .calculator-header {
+    padding: 2rem 1.5rem;
+  }
+
+  .calculator-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .input-wrapper input {
+    padding: 1rem 1rem 1rem 4rem;
+  }
+
+  .calculate-btn {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .footerSecond {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+}

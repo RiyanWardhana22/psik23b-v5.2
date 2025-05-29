@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>PSIK 23 B</title>
+    <link rel="icon" href="./assets/img/logopsik.png" />
+
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts Ends -->
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSLYGKW4YQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GSLYGKW4YQ');
+</script>
+
+  </head>
+  <body>
+    <!-- Header Design Start -->
+    <header class="header">
+      <a href="">
+        <h1 class="logo">
+          <img src="./assets/img/logopsik.png" class="logo-img">
+          <span class="multiple-text"></span>
+        </h1>
+      </a>
+
+      <!-- Dark Mode Start-->
+      <div class="mode-gelap" onclick="toggleMode()">
+        <i onclick="myFunction()" class="bx bxs-moon" id="moon"></i>
+        <i
+          onclick="myFunction()"
+          class="bx bxs-sun"
+          id="sun"
+          style="display: none"
+        ></i>
+      </div>
+      <!-- Dark Mode End-->
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home"><i class="bx bxs-home"></i> Beranda</a>
+        <a href="./gallery/"><i class="bx bxs-image-alt"></i> Galeri</a>
+        <a href="./schedule/"><i class="bx bx-calendar" ></i></i> Jadwal</a>
+        <a href="./helium/"><i class='bx bxs-brain'></i> Helium</a>
+        <a href="./fitur/"><i class='bx bxs-layer'></i> Fitur</a>
+      </nav>
+    </header>
+    <!-- Header Design End -->
+
+    <!-- Navbar Magic Start -->
+    <nav class="navbar-magic">
+      <a href="#home"
+        ><i class="bx bxs-home" aria-hidden></i>
+        <span class="title">Beranda</span></a>
+      <a href="./gallery/">
+        <i class="bx bxs-image" aria-hidden></i
+        ><span class="title">Galeri</span></a>
+      <a href="./schedule/"
+        ><i class="bx bx-calendar" aria-hidden></i
+        ><span class="title">Jadwal</span></a>
+      <a href="./helium/"
+        ><i class="bx bxs-brain" aria-hidden></i>
+        <span class="title">Helium</span></a>
+      <a href="./fitur/"
+      ><i class='bx bxs-layer' aria-hidden></i>
+      <span class="title">Fitur</span></a>
+      <!-- <div class="selected-option-bg"></div> -->
+    </nav>
+    <!-- Navbar Magic End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>WELCOME TO</h1>
+        <h3>ILMU KOMPUTER 23 B</h3>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Profile Section Start -->
+    <section class="about" id="profil">
+        <div class="about-img">
+          <img src="./assets/img/server-animate.svg" alt="" />
+        </div>
+        <div class="about-content">
+          <h2 class="heading">PROFIL KELAS</h2>
+          <p class="main">
+            Welcome to Kelas 23 B Program Studi Ilmu Komputer Universitas Negeri Medan, 
+            yang mendalami tentang teknologi mutakhir dan memperlihatkan prospek kerja yang cukup luas di dunia IT. 
+            Dengan fokus pada pemrograman, kecerdasan buatan, dan perkembangan teknologi. 
+            Ada pula sususan struktur kelas di bawah ini
+          </p>
+          <p class="main">◉ Komisaris Tingkat : Pedro Stella Mario Meyar Waruwu</p>
+          <p class="main">◉ Sekretaris : Yusmita Imelda</p>
+          <p class="main">◉ Bendahara : Lastri Elisabet Butar Butar</p>
+          <p class="main">◉ Total Mahasiswa : 29 Orang</p>
+          <div class="social-media">
+            <p>
+              <b>Follow Us</b>
+            </p>
+            <div class="card">
+              <a target="_blank" class="socialContainer instagram" href="https://www.instagram.com/kom.23b/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="socialSvg instagramSvg"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+              </a>
+            
+              <a target="_blank" class="socialContainer discord" href="https://discord.gg/ppc2SYAHsd">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="socialSvg discordSvg"><path d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Profile Section End -->
+
+    <!-- Contact Section Start -->
+    <section>
+    <div class="container">
+      <div class="mapbox" data-mapbox>
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.9567423106198!2d98.71466085204433!3d3.6072747724013956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131e66b0cead1%3A0x287c8513f41bc90f!2sGedung%2077%20Ilmu%20Komputer%20-%20UNIMED!5e0!3m2!1sid!2sid!4v1738773874609!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+      </div>
+      <div class="contact-form">
+        <h3 class="h3 form-title">Kirim Masukan</h3>
+        <form
+          action="https://formspree.io/f/xwpeowja"
+          method="post"
+          class="form"
+          data-form
+        >
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="fullname"
+              class="form-input"
+              placeholder="Full name"
+              required
+              data-form-input
+            />
+  
+            <input
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="Email address"
+              required
+              data-form-input
+            />
+          </div>
+  
+          <textarea
+            name="message"
+            class="form-input"
+            placeholder="Your Message"
+            required
+            data-form-input
+          ></textarea>
+          
+          <div class="button-wrapper">
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <i class='bx bxl-telegram'></i>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footerSecond">
+      <div class="footerSecond-text">
+        <p> Created By <i class='bx bxl-sketch' id="diamond"></i>
+          <a target="_blank" href="https://www.instagram.com/riyan_wrdhna/">Riyan Wardhana</a>
+        </p>
+      </div>
+    </div>
+  </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <a href="https://github.com/RiyanWardhana22" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/riyan_wrdhna/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <p>© <span id="years"></span> | Riyan Wardhana</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

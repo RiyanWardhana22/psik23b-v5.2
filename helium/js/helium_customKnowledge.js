@@ -119,4 +119,11 @@ window.customKnowledge = {
     response:
       "Komisaris Tingkat : Pedro Stella Mario Meyar Waruwu, Sekretaris : Yusmita Imelda, Bendahara : Lastri Elisabet Butar Butar",
   },
+
+  "jadwal hari selasa blok 2 apa": {
+    variants: ["riyan itu siapa"],
+    response: `Mata kuliah: Data Mining dan Big Data Analytics, Jam: 10.30-13.00, Ruang: 77.1.01, 3 Sks 
+    Mata kuliah: Pengolahan Citra Digital, Jam: 13.50-16.20, Ruang: 12.2.08, 3 Sks
+`,
+  },
 };

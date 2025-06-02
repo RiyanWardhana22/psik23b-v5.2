@@ -113,4 +113,10 @@ window.customKnowledge = {
     response:
       "Riyan Wardhana adalah salah satu mahasiswa Universitas Negeri Medan dengan program studi Ilmu Komputer lahir pada 22 Juni 2005",
   },
+
+  "sebutkan struktur kelas psik 23 b": {
+    variants: ["riyan itu siapa"],
+    response:
+      "Komisaris Tingkat : Pedro Stella Mario Meyar Waruwu, Sekretaris : Yusmita Imelda, Bendahara : Lastri Elisabet Butar Butar",
+  },
 };

@@ -8,8 +8,8 @@ const countSelect = document.getElementById("count-select");
 const ratioSelect = document.getElementById("ratio-select");
 const gridGallery = document.querySelector(".gallery-grid");
 
-// const API_KEY = "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"; // API riyanwardhana2
-const API_KEY = "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"; // API riyanwardhana55
+const API_KEY = "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"; // API riyanwardhana2
+// const API_KEY = "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"; // API riyanwardhana55
 
 const examplePrompts = [
   "Hutan ajaib dengan tanaman bercahaya dan rumah peri di antara jamur raksasa",

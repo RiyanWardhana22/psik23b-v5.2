@@ -13,10 +13,10 @@ var swiper = new Swiper(".swiper", {
   },
   spaceBetween: 60,
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -34,10 +34,10 @@ var swiper = new Swiper(".slide-container", {
   centerSlide: "true",
   fade: "true",
   grabCursor: "true",
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

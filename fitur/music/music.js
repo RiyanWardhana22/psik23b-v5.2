@@ -1,44 +1,32 @@
 let allMusic = [
   {
-    name: "everything u are",
-    artist: "Hindia",
-    img: "musik6",
-    src: "musik6",
-  },
-  {
-    name: "Lesung Pipi",
-    artist: "Raim Laode",
-    img: "musik2",
-    src: "musik2",
-  },
-  {
-    name: "blue",
-    artist: "yung kai",
-    img: "musik3",
-    src: "musik3",
-  },
-  {
-    name: "Sadrah",
-    artist: "for Revange",
-    img: "musik4",
-    src: "musik4",
-  },
-  {
-    name: "Monolog",
-    artist: "Pamungkas",
-    img: "musik5",
-    src: "musik5",
-  },
-  {
-    name: "Sempurna",
-    artist: "Andra & The Backbone",
-    img: "musik1",
-    src: "musik1",
+    name: "TABOLA BALE",
+    artist: "Silet Open Up, Jacson Seran, Juan Reza",
+    img: "music1",
+    src: "music1",
   },
   {
     name: "Tarot",
     artist: ".Feast",
-    img: "musik7",
-    src: "musik7",
+    img: "music2",
+    src: "music2",
+  },
+  {
+    name: "Monolog",
+    artist: "Pamungkas",
+    img: "music3",
+    src: "music3",
+  },
+  {
+    name: "bergema sampai selamanya",
+    artist: "Nadhif Basalamah",
+    img: "music4",
+    src: "music4",
+  },
+  {
+    name: "Mangu",
+    artist: "Fourtwnty",
+    img: "music5",
+    src: "music5",
   },
 ];

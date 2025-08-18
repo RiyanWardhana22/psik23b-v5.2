@@ -205,11 +205,11 @@ section {
 
 /* Hidden Element Max Width Start */
 #senin {
-  max-height: 180px;
+  max-height: 350px;
 }
 
 #selasa {
-  max-height: 900px;
+  max-height: 350px;
 }
 
 #rabu {
@@ -217,25 +217,25 @@ section {
 }
 
 #kamis {
-  max-height: 720px;
+  max-height: 350px;
 }
 
 #jumat {
-  max-height: 360px;
+  max-height: 140px;
 }
 /* Hidden Element Max Width End */
 
 /* Hidden Element BLOK 2 Max Width Start */
 #senin-blok2 {
-  max-height: 180px;
+  max-height: 540px;
 }
 
 #selasa-blok2 {
-  max-height: 360px;
+  max-height: 170px;
 }
 
 #rabu-blok2 {
-  max-height: 350px;
+  max-height: 170px;
 }
 
 #kamis-blok2 {
@@ -243,7 +243,7 @@ section {
 }
 
 #jumat-blok2 {
-  max-height: 350px;
+  max-height: 170px;
 }
 /* Hidden Element BLOK 2 Max Width End */
 
@@ -530,36 +530,36 @@ section {
   }
 
   #senin {
-    max-height: 150px;
+    max-height: 290px;
   }
 
   #selasa {
-    max-height: 740px;
+    max-height: 310px;
   }
 
   #rabu {
-    max-height: 310px;
+    max-height: 290px;
   }
 
   #kamis {
-    max-height: 590px;
+    max-height: 310px;
   }
 
   #jumat {
-    max-height: 310px;
+    max-height: 120px;
   }
 
   /* Hidden Element BLOK 2 Max Width Start */
   #senin-blok2 {
-    max-height: 150px;
+    max-height: 440px;
   }
 
   #selasa-blok2 {
-    max-height: 300px;
+    max-height: 150px;
   }
 
   #rabu-blok2 {
-    max-height: 290px;
+    max-height: 150px;
   }
 
   #kamis-blok2 {
@@ -567,7 +567,7 @@ section {
   }
 
   #jumat-blok2 {
-    max-height: 290px;
+    max-height: 150px;
   }
 
   .calender img {

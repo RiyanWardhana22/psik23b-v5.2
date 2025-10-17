@@ -1,17 +1,17 @@
 // SweetAlert Notification
-// Swal.fire({
-//   title: "Refresh websitenya yaa😉",
-//   color: "#fdfefe",
-//   padding: "3em",
-//   background: `linear-gradient(
-//     90deg,
-//     rgba(79, 71, 175, 1) 0%,
-//     rgba(104, 92, 254, 1) 35%,
-//     rgba(104, 92, 254, 1) 100%
-//   )`,
-//   // icon: "warning",
-//   confirmButtonText: "OK",
-// });
+Swal.fire({
+  title: "Refresh websitenya yaa😉",
+  color: "#fdfefe",
+  padding: "3em",
+  background: `linear-gradient(
+    90deg,
+    rgba(79, 71, 175, 1) 0%,
+    rgba(104, 92, 254, 1) 35%,
+    rgba(104, 92, 254, 1) 100%
+  )`,
+  // icon: "warning",
+  confirmButtonText: "OK",
+});
 
 // Section Timetable
 const toggleButtons = document.querySelectorAll(".toggle-button");

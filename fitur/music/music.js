@@ -1,13 +1,7 @@
 let allMusic = [
   {
-    name: "TABOLA BALE",
-    artist: "Silet Open Up, Jacson Seran, Juan Reza",
-    img: "music1",
-    src: "music1",
-  },
-  {
-    name: "Tarot",
-    artist: ".Feast",
+    name: "Alamak",
+    artist: "Rizky Febian, Adrian Khalif",
     img: "music2",
     src: "music2",
   },
@@ -24,8 +18,14 @@ let allMusic = [
     src: "music4",
   },
   {
-    name: "Mangu",
-    artist: "Fourtwnty",
+    name: "TABOLA BALE",
+    artist: "Silet Open Up, Jacson Seran, Juan Reza",
+    img: "music1",
+    src: "music1",
+  },
+  {
+    name: "everything u are",
+    artist: "Hindia",
     img: "music5",
     src: "music5",
   },

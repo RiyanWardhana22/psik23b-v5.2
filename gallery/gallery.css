@@ -104,6 +104,18 @@ section {
   background: url(../assets/img/galeri/8.jpg) no-repeat 50% 50% / cover;
 }
 
+.swiper-slide--seven {
+  background: url(../assets/img/galeri/9.jpg) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--seven {
+  background: url(../assets/img/galeri/10.jpg) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--seven {
+  background: url(../assets/img/galeri/11.jpg) no-repeat 50% 50% / cover;
+}
+
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;

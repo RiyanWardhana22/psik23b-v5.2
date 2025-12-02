@@ -5,9 +5,9 @@ Swal.fire({
   padding: "3em",
   background: `linear-gradient(
     90deg,
-    rgba(79, 71, 175, 1) 0%,
-    rgba(104, 92, 254, 1) 35%,
-    rgba(104, 92, 254, 1) 100%
+    rgba(166, 0, 0, 1) 0%,
+    rgba(220, 0, 0, 1) 50%,
+    rgba(166, 0, 0, 1) 100%
   )`,
   // icon: "warning",
   confirmButtonText: "OK",

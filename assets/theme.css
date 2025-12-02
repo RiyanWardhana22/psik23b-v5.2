@@ -1,12 +1,12 @@
 :root {
   --bg: #f6f5fd;
   --text-color: #000000;
-  --main-color: #4f46e5;
+  --main-color: #dc0000;
   --gradient: linear-gradient(
     90deg,
-    rgba(8, 0, 143, 1) 0%,
-    rgba(79, 70, 229, 1) 50%,
-    rgba(24, 18, 122, 1) 100%
+    rgba(166, 0, 0, 1) 0%,
+    rgba(220, 0, 0, 1) 50%,
+    rgba(166, 0, 0, 1) 100%
   );
   --second-bg: #ffffff;
   --lightbshadow: rgba(0, 0, 0, 0.15);
@@ -17,12 +17,12 @@
 .dark-mode {
   --bg: #0b0d14;
   --text-color: #f6f5fd;
-  --main-color: #4f46e5;
+  --main-color: #dc0000;
   --gradient: linear-gradient(
     90deg,
-    rgba(8, 0, 143, 1) 0%,
-    rgba(79, 70, 229, 1) 50%,
-    rgba(24, 18, 122, 1) 100%
+    rgba(166, 0, 0, 1) 0%,
+    rgba(220, 0, 0, 1) 50%,
+    rgba(166, 0, 0, 1) 100%
   );
   --second-bg: #0b0d14;
   --lightbshadow: rgba(255, 255, 255, 0.08);

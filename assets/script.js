@@ -117,3 +117,49 @@ for (let i = 0; i < formInputs.length; i++) {
     }
   });
 }
+
+// HERO SLIDER START
+const heroSlider = document.querySelector(".hero-slider");
+const slides = [
+  "./assets/img/slider/slider1.jpg",
+  "./assets/img/slider/slider2.jpg",
+  "./assets/img/slider/slider3.jpg",
+  "./assets/img/slider/slider4.jpg",
+  "./assets/img/slider/slider5.jpg",
+];
+
+let currentSlide = 0;
+
+function initSlider() {
+  slides.forEach((imgSrc, index) => {
+    const slide = document.createElement("div");
+    slide.classList.add("hero-slide");
+    slide.style.backgroundImage = `url('${imgSrc}')`;
+    if (index === 0) {
+      slide.classList.add("active", "zoom-in");
+    }
+
+    heroSlider.appendChild(slide);
+  });
+}
+
+function changeSlide() {
+  const allSlides = document.querySelectorAll(".hero-slide");
+  const activeSlide = allSlides[currentSlide];
+  activeSlide.classList.remove("active");
+  currentSlide = (currentSlide + 1) % allSlides.length;
+  const nextSlide = allSlides[currentSlide];
+
+  nextSlide.classList.add("active");
+  nextSlide.classList.remove("zoom-in", "zoom-out");
+  if (currentSlide % 2 === 0) {
+    nextSlide.classList.add("zoom-in");
+  } else {
+    nextSlide.classList.add("zoom-out");
+  }
+}
+
+if (heroSlider) {
+  initSlider();
+  setInterval(changeSlide, 3000);
+}

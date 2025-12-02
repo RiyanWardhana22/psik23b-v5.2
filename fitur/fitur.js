@@ -18,14 +18,30 @@ ScrollReveal().reveal(".container, .judul, .audio, .send-button, #alert", {
   origin: "bottom",
 });
 
-// CHANGELOG START
+// REQUEST MUSIC START
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+var span = document.querySelector(".close");
 
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
+  setTimeout(() => {
+    modal.classList.add("active");
+  }, 10);
 };
+
 span.onclick = function () {
-  modal.style.display = "none";
+  modal.classList.remove("active");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 300);
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.classList.remove("active");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300);
+  }
 };

@@ -212,32 +212,39 @@
     </section>
     <!-- Card Spotify End -->
 
-        <!-- Request Music Start -->
-        <main id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="box-changelog">
-              <h2>REQUEST MUSIC</h2>
+    <!-- Request Music Start -->
+    <main id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>REQUEST MUSIC <i class='bx bxs-music'></i></h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p class="subtitle">Ingin lagu favoritmu diputar? Kirim request di sini!</p>
+          <form class="request-form" action="https://formspree.io/f/mblropeb" method="POST">
+            <div class="kirim-data">
+              <input type="text" name="Judul-lagu" required>
+              <label>Judul Lagu & Artis</label>
+              <span class="icon"><i class='bx bxs-playlist'></i></span>
             </div>
-            <div class="modal-container">
-              <form class="login-form" 
-              action="https://formspree.io/f/mblropeb"
-              method="POST">
-                <div class="input-group">
-                  <textarea name="Judul-lagu" placeholder="Judul Lagu" required></textarea>
-                </div>
-                <div class="input-group">
-                  <textarea name="Link-youtube" placeholder="Link Youtube/Spotify (Opsional)"></textarea>
-                </div>
-                <div class="input-group">
-                  <textarea name="Putar-detik" placeholder="Di putar didetik berapa? (Opsional)"></textarea>
-                </div>
-                <button id="btn" class="btn-music" type="submit">KIRIM</button>
-              </form>
+            <div class="kirim-data">
+              <input type="text" name="Link-youtube">
+              <label>Link Youtube/Spotify (Opsional)</label>
+              <span class="icon"><i class='bx bxl-youtube'></i></span>
             </div>
-          </div>
-        </main>
-        <!-- Request Music End -->
+            <div class="kirim-data">
+              <input type="text" name="Putar-detik">
+              <label>Diputar detik ke berapa? (Opsional)</label>
+              <span class="icon"><i class='bx bx-timer'></i></span>
+            </div>
+            <button id="btn" class="btn-music" type="submit">
+              KIRIM REQUEST 
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Request Music End -->
      
     <!-- Footer Section Start -->
     <footer class="footer">

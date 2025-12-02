@@ -74,10 +74,9 @@ function toggleMode() {
   const sunIcon = document.getElementById("sun");
   const body = document.body;
 
-  const isDarkMode = body.classList.toggle("dark-mode"); // Toggle class "dark-mode"
+  const isDarkMode = body.classList.toggle("dark-mode");
   localStorage.setItem("themeColor", isDarkMode ? "dark-mode" : "light-mode");
 
-  // Atur tampilan ikon
   moonIcon.style.display = isDarkMode ? "none" : "inline";
   sunIcon.style.display = isDarkMode ? "inline" : "none";
 }

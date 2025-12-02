@@ -333,7 +333,7 @@ section {
   pointer-events: none;
   padding: 15px 30px;
   border-radius: 15px;
-  background: var(--white);
+  background: var(--bg);
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.14s ease-out;
 }
@@ -361,16 +361,18 @@ section {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  color: var(--text-color);
   cursor: default;
 }
 
 .header-list .row span {
   margin-left: 5px;
+  color: var(--text-color);
 }
 
 .header-list #close {
   font-size: 3rem;
-  color: var(--lightblack);
+  color: var(--text-color);
 }
 
 .music-list ul {
@@ -388,7 +390,7 @@ section {
   list-style: none;
   padding-bottom: 10px;
   margin-bottom: 5px;
-  color: black;
+  color: var(--text-color);
   border-bottom: 1px solid #e5e5e5;
 }
 

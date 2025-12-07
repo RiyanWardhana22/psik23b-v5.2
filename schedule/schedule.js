@@ -1,18 +1,3 @@
-// SweetAlert Notification
-// Swal.fire({
-//   title: "Refresh websitenya yaa😉",
-//   color: "#fdfefe",
-//   padding: "3em",
-//   background: `linear-gradient(
-//     90deg,
-//     rgba(166, 0, 0, 1) 0%,
-//     rgba(220, 0, 0, 1) 50%,
-//     rgba(166, 0, 0, 1) 100%
-//   )`,
-//   // icon: "warning",
-//   confirmButtonText: "OK",
-// });
-
 Swal.fire({
   position: "top-end",
   icon: "success",

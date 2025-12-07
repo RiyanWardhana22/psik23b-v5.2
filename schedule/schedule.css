@@ -62,16 +62,6 @@ section {
   box-shadow: 0px 5px 10px var(--lightbshadow);
 }
 
-/* .tabs__toggle {
-  margin: 0 5px;
-  padding: 7px 25px;
-  background: var(--gradient);
-  color: var(--white);
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-} */
-
 .tabs__toggle {
   position: relative;
   background: transparent;

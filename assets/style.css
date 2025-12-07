@@ -146,94 +146,175 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  min-height: 100vh;
   background: var(--bg);
+  padding-top: 8rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .about-img img {
-  margin-left: -2vw;
-  width: 30vw;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.1));
 }
 
-.heading {
-  color: var(--main-color);
+.about-content {
+  flex: 1.2;
+}
+
+.about-content .heading {
   text-align: center;
+  margin-bottom: 1rem;
+  color: var(--main-color);
   font-size: 4rem;
 }
 
-.about-content p {
-  padding-left: 5vw;
+.about-content .description {
   font-size: 1.6rem;
-  margin: 2rem 0 3rem;
-}
-
-.social-media p {
-  font-size: 1.8rem;
+  line-height: 1.6;
   margin-bottom: 1rem;
+  color: var(--text-color);
+  opacity: 0.9;
 }
 
-.card {
-  margin-left: 5vw;
-  width: fit-content;
-  height: fit-content;
+.class-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stat-box {
+  background: linear-gradient(
+    135deg,
+    var(--second-bg) 0%,
+    rgba(var(--main-color), 0.1) 100%
+  );
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-left: 4px solid var(--main-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box i {
+  font-size: 3.5rem;
+  color: var(--main-color);
+}
+
+.stat-info h3 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.stat-info p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-top: 0.2rem;
+}
+
+.highlight-box {
+  background: linear-gradient(
+    135deg,
+    var(--second-bg) 0%,
+    rgba(var(--main-color), 0.1) 100%
+  );
+  border-left: 4px solid var(--main-color);
+}
+
+.social-media-modern {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.social-media-modern p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
   background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  transition: 0.3s;
+  text-decoration: none;
 }
 
-.socialContainer {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: var(--second-bg);
-  border: 1px solid var(--main-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.3s;
+.social-btn:hover {
+  background: var(--main-color);
+  color: var(--bg);
+  box-shadow: 0 0 10px var(--main-color);
 }
 
-.instagram:hover {
-  background-color: #ff003a;
-  box-shadow: 5px 5px 5px #ff003a;
-  transition-duration: 0.3s;
-}
+/* --- MEDIA QUERIES (RESPONSIVE) --- */
 
-.discord:hover {
-  background-color: #5555ff;
-  box-shadow: 5px 5px 5px #5555ff;
-  transition-duration: 0.3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-.socialSvg {
-  width: 20px;
-}
-
-.socialSvg path {
-  fill: var(--text-color);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
+/* Tablet & Laptop Kecil */
+@media (max-width: 991px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
   }
 
-  100% {
-    transform: translateY(0);
-    opacity: 1;
+  .about-content .heading {
+    text-align: center;
+  }
+
+  .class-stats {
+    text-align: left;
+  }
+
+  .social-media-modern {
+    justify-content: center;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 600px) {
+  .class-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box {
+    padding: 1.2rem;
+  }
+
+  .about-img img {
+    width: 80%;
   }
 }
 /* Profile Section End */
@@ -489,6 +570,10 @@ textarea.form-input::-webkit-resizer {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .about {
+    padding: 3rem;
   }
 
   .hero .content h1 {

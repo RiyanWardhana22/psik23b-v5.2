@@ -224,7 +224,7 @@ section {
 
 .follow-btn {
   padding: 12px 24px;
-  background: linear-gradient(45deg, var(--main-color), #685cfe);
+  background: var(--gradient);
   font-size: 1.5rem;
   color: #fff;
   font-weight: 700;
@@ -257,9 +257,9 @@ section {
 }
 
 .follow-btn:hover {
-  background: linear-gradient(45deg, #685cfe, var(--main-color));
+  background: var(--gradient);
   color: #fff;
-  box-shadow: 0 0 25px rgba(104, 92, 254, 0.7);
+  box-shadow: 0 0 25px var(--main-color);
   border-color: rgba(255, 255, 255, 0.5);
 }
 

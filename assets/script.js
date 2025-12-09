@@ -41,10 +41,12 @@ ScrollReveal().reveal(
     origin: "bottom",
   }
 );
-ScrollReveal().reveal(".stat-box", { origin: "right" });
-ScrollReveal().reveal(".main, .social-media, .form-title, .form-input", {
-  origin: "left",
-});
+ScrollReveal().reveal(
+  ".main, .stat-box, .social-media, .form-title, .form-input",
+  {
+    origin: "left",
+  }
+);
 
 // Function Call Hari
 function hari() {
@@ -95,12 +97,10 @@ function loadLocalStorage() {
 loadLocalStorage();
 
 // Footer
-function years() {
-  const yearSpan = document.getElementById("years");
-  const tahunIni = new Date().getFullYear();
-  yearSpan.textContent = tahunIni;
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.innerText = new Date().getFullYear();
 }
-years();
 
 // contact form variables
 const form = document.querySelector("[data-form]");

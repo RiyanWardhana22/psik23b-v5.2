@@ -34,9 +34,6 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".main, .social-media, .form-title, .form-input", {
-  origin: "left",
-});
 ScrollReveal().reveal(".heading", { origin: "top" });
 ScrollReveal().reveal(
   ".btn, .about-img, .content, .input-box, .mapbox, .form-btn",
@@ -44,6 +41,10 @@ ScrollReveal().reveal(
     origin: "bottom",
   }
 );
+ScrollReveal().reveal(".stat-box", { origin: "right" });
+ScrollReveal().reveal(".main, .social-media, .form-title, .form-input", {
+  origin: "left",
+});
 
 // Function Call Hari
 function hari() {

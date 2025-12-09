@@ -73,6 +73,6 @@ ScrollReveal().reveal(
     origin: "left",
   }
 );
-// ScrollReveal().reveal(".toggle-button, .hidden-element,  #img", {
-//   origin: "bottom",
-// });
+ScrollReveal().reveal(".toggle-button, .hidden-element,  #img", {
+  origin: "bottom",
+});

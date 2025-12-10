@@ -1,5 +1,5 @@
 Swal.fire({
-  position: "top-end",
+  position: "center",
   icon: "success",
   title: "Refresh websitenya yaa",
   showConfirmButton: false,

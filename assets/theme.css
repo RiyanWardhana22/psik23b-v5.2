@@ -261,6 +261,21 @@
   margin-bottom: 1.2rem;
 }
 
+.footer-links li,
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.footer-links i {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
 .footer-links a {
   font-size: 1.6rem;
   color: var(--text-color);
@@ -273,15 +288,6 @@
   color: var(--main-color);
   transform: translateX(5px);
   opacity: 1;
-}
-
-.footer-contact li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  opacity: 0.8;
 }
 
 .footer-contact a {

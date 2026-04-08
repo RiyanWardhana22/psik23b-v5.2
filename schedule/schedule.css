@@ -271,7 +271,7 @@ section {
 }
 
 #kamis-blok2 {
-  max-height: 170px;
+  max-height: 350px;
 }
 
 #jumat-blok2 {
@@ -603,7 +603,7 @@ section {
   }
 
   #kamis-blok2 {
-    max-height: 150px;
+    max-height: 290px;
   }
 
   #jumat-blok2 {
@@ -735,5 +735,9 @@ section {
 
   #rabu-blok2 {
     max-height: 320px;
+  }
+
+  #kamis-blok2 {
+    max-height: 310px;
   }
 }

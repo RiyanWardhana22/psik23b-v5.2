@@ -39,13 +39,13 @@ ScrollReveal().reveal(
   ".btn, .about-img, .content, .input-box, .mapbox, .form-btn",
   {
     origin: "bottom",
-  }
+  },
 );
 ScrollReveal().reveal(
   ".main, .stat-box, .social-media, .form-title, .form-input",
   {
     origin: "left",
-  }
+  },
 );
 
 // Function Call Hari
@@ -162,4 +162,21 @@ function changeSlide() {
 if (heroSlider) {
   initSlider();
   setInterval(changeSlide, 3000);
+}
+
+// Service Worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) => {
+        console.log(
+          "ServiceWorker berhasil didaftarkan dengan scope: ",
+          registration.scope,
+        );
+      })
+      .catch((error) => {
+        console.log("Pendaftaran ServiceWorker gagal: ", error);
+      });
+  });
 }

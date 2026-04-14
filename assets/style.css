@@ -280,6 +280,19 @@ section {
   box-shadow: 0 0 10px var(--main-color);
 }
 
+.btn-install {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-install:hover {
+  background-color: #357abd;
+}
+
 /* --- MEDIA QUERIES (RESPONSIVE) --- */
 
 /* Tablet & Laptop Kecil */

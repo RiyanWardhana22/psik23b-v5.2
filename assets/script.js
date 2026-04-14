@@ -180,3 +180,42 @@ if ("serviceWorker" in navigator) {
       });
   });
 }
+
+let deferredPrompt;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  Swal.fire({
+    title: "Install PSIK 23B App?",
+    text: "Install aplikasi ini di HP kamu untuk akses yang lebih cepat dan bisa dibuka saat offline!",
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonColor: "#4A90E2",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Ya, Install!",
+    cancelButtonText: "Tidak",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("User menerima instalasi PWA");
+        } else {
+          console.log("User menolak instalasi PWA");
+        }
+        deferredPrompt = null;
+      });
+    }
+  });
+});
+
+// Opsional: Beri tahu user jika aplikasi berhasil diinstal
+window.addEventListener("appinstalled", () => {
+  Swal.fire({
+    title: "Berhasil!",
+    text: "Aplikasi PSIK 23B berhasil diinstal.",
+    icon: "success",
+    timer: 2000,
+    showConfirmButton: false,
+  });
+});

@@ -10,7 +10,7 @@ let chatHistory = [];
 let userData = { message: "", file: {} };
 
 const API_KEY = "AIzaSyA3T2FKL_DhMGY2SCdNx9E5aYmIY2lYiO8";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
 const saveLocalStorage = () => {
   const chatsHTML = chatsContainer.innerHTML;

@@ -9,7 +9,7 @@ let typingInterval, controller;
 let chatHistory = [];
 let userData = { message: "", file: {} };
 
-const API_KEY = "AIzaSyA3T2FKL_DhMGY2SCdNx9E5aYmIY2lYiO8";
+const API_KEY = "AIzaSyB_ramxZItkxU58_4KA2D2-POSq9yoPM9U";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
 const saveLocalStorage = () => {

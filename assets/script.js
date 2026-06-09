@@ -126,6 +126,9 @@ const slides = [
   "./assets/img/slider/slider3.jpg",
   "./assets/img/slider/slider4.jpg",
   "./assets/img/slider/slider5.jpg",
+  "./assets/img/slider/slider6.jpg",
+  "./assets/img/slider/slider7.jpg",
+  "./assets/img/slider/slider8.jpg",
 ];
 
 let currentSlide = 0;
